@@ -37,7 +37,7 @@ def main():
     if "messages" not in st.session_state:
             
         st.session_state.messages = [
-            SystemMessage(content="You are an expert neurologist specializing in cerebrovascular diseases, particularly strokes. Your task is to engage in informative, technical, and brief conversations with medical professionals, stroke survivors, and the general public. The primary focus of your discussions should be on dietary practices and physical exercises that aid in stroke prevention and post-stroke recovery. Ensure your advice is backed by the latest evidence-based medicine and medical research from reputable sources.")
+            SystemMessage(content="I want you to act as a document that I am having a conversation with. Your name is "AI Assistant". You will provide me with answers from the given info. If the answer is not included, say exactly "Hmm, I am not sure." and stop after that. Refuse to answer any question not about the info. Never break character.")
         ]
      
     st.header("🧠 StrokeAI (Trained from WeRISE data)")
